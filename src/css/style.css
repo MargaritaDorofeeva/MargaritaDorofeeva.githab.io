@@ -64,11 +64,10 @@ nav{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
+    margin: 5% 50% 0% 50%;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
     width: 100px;
-    display: block;
     
     
 }
@@ -117,16 +116,16 @@ nav{
     background: url(../img/fo.jpg) 100% no-repeat;
 }
 .title2 h2{
+    float: left;
     color: #344051;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    margin: 10% 50% 0% 50%;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
-    width: 170px;
-    margin: 0 auto;
-    display: block;
+    width: 100px;
 }
 .menu2 li{ 
    float: left;
@@ -153,12 +152,6 @@ nav{
     height: 500px;
     
 }
-.job {
-    float: left;
-    width: 100%;
-    
-}
-
 .job li{
    float: inherit;
     text-align: left;
@@ -172,20 +165,6 @@ nav{
     color: #344051; 
     padding: 1% 0%;
     font-weight: normal;}
-
-.job input{
-    height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    background: #63b5ae;
-    border: 2px solid #63b5ae;
-    border-radius: 4px;
-    color:#697784; 
-    font-size: 14px;
-    padding: 0px 14px 0px 14px;
-    margin: 10px 0px 0px 10px;
-    
-}
 
 .project {
     float: left;
@@ -208,7 +187,16 @@ nav{
 }
 
 .project input{
-    
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #63b5ae;
+    border: 2px solid #63b5ae;
+    border-radius: 4px;
+    color:#697784; 
+    font-size: 14px;
+    padding: 0px 14px 0px 14px;
+    margin: 10px 0px 0px 10px;
 }
 ul.variant h3{
     text-transform: uppercase;
@@ -260,19 +248,19 @@ ul.numeral p{
      margin: 40px 250px 0px 250px;
 }
 .title3 h2{
+   float: left;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
-    display: block;
+    margin: 10% 50% 0% 50%;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
     width: 100px; 
 }
 .place{
-    height: 785px;
+    height: 1000px;
     background: url(../img/blue.jpg) no-repeat center 30px local;
 }
 .place p{
@@ -316,7 +304,7 @@ ul.numeral p{
 .map{
     
     background: url(../img/map.jpg) no-repeat 100% local;
-    height: 356px;
+    height: 100%;
 }
 footer{
     width: 100%;
