@@ -64,10 +64,12 @@ nav{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 5% 50% 0% 50%;
+    margin: 0 auto;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
-    width: 100px;
+    width: 130px;
+    display: block;
+    padding-top: 30px;
     
     
 }
@@ -116,16 +118,17 @@ nav{
     background: url(../img/fo.jpg) 100% no-repeat;
 }
 .title2 h2{
-    float: left;
     color: #344051;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 10% 50% 0% 50%;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
-    width: 100px;
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 60px;
 }
 .menu2 li{ 
    float: left;
@@ -133,10 +136,15 @@ nav{
     font-size: 16px;
     color: #eb7800;
     font-weight: bold;
-    margin: 160px 15px 0px 15px;
+    margin: 130px 15px 0px 15px;
     background-image: url(../img/comp.png) no-repeat, url(../img/zna.png) 200px no-repeat;
     background-repeat: no-repeat;
 } 
+.menu2 li img{
+    margin: 0 40% 10% 40%;
+    
+    
+}
 .menu2 li p{
     text-align: center;
     font-size: 14px;
@@ -149,9 +157,15 @@ nav{
     margin-top: 40px;
     color: #616876;
     background: url(../img/aga.jpg) no-repeat center 30px local;
-    height: 500px;
+    height: 600px;
     
 }
+.job {
+    float: left;
+    width: 310px;
+    
+}
+
 .job li{
    float: inherit;
     text-align: left;
@@ -159,6 +173,7 @@ nav{
     color: #344051; 
     font-weight: bold;
     padding-left: 91px;
+    padding-top: 20px;
 }
 .job li p{
     font-size: 18px;
@@ -166,19 +181,35 @@ nav{
     padding: 1% 0%;
     font-weight: normal;}
 
-.project {
+.job input{
     float: left;
+    height: 40px;
+    width: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #63b5ae;
+    border: 2px solid #63b5ae;
+    border-radius: 4px;
+    color:#fff; 
+    font-size: 15px;
+    padding: 0px 14px 0px 14px;
+    margin: 10px 0px 0px 0px;
+    
+}
+
+.project {
+    
     padding-left: 150px;
 }
 .project h3{
-    float: left;
+    
     font-size: 22px;
     color: #344051; 
     font-weight: bold;
     margin: 20px 600px 0px 400px;
 }
 .project p{
-    float: left;
+    
     font-size: 18px;
     color: #344051; 
     font-weight: normal;
@@ -186,18 +217,6 @@ nav{
     padding: 5px 300px;
 }
 
-.project input{
-    height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    background: #63b5ae;
-    border: 2px solid #63b5ae;
-    border-radius: 4px;
-    color:#697784; 
-    font-size: 14px;
-    padding: 0px 14px 0px 14px;
-    margin: 10px 0px 0px 10px;
-}
 ul.variant h3{
     text-transform: uppercase;
     font-size: 22px;
@@ -213,7 +232,7 @@ select#list {
     margin: 0px 300px 10px 300px;
 }
 .numeral{
-     height: 500px;
+     height: 490px;
     background: url(../img/fon.jpg) no-repeat center 30px local;
 }
 ul.numeral li{
@@ -223,7 +242,10 @@ ul.numeral li{
     color: #344051; 
     font-weight: bolder;
     text-align: center;
-   margin: 160px 70px 0px 70px;
+   margin: 160px 70px 250px 70px;
+}
+.numeral li img{
+    margin: 0 40% 10% 40%;
 }
 ul.numeral p{
      font-size: 15px;
@@ -235,12 +257,12 @@ ul.numeral p{
 .moretext{
     height: 350px;
     background: url(../img/man.jpg) no-repeat local;
-    background-position: 50% 20%;
+    background-position: 50% 25%;
     padding-top: 50px;
 }
 .moretext p{
     font-size: 15px;
-     margin: 180px 250px 0px 250px;
+     margin: 200px 250px 0px 250px;
      color: #616876;
     text-align: center;
 }
@@ -248,19 +270,21 @@ ul.numeral p{
      margin: 40px 250px 0px 250px;
 }
 .title3 h2{
-   float: left;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 10% 50% 0% 50%;
+    margin: 0 auto;
+    display: block;
     border-bottom: 5px solid #eb7800;
     padding-bottom: 20px;
-    width: 100px; 
+    width: 200px; 
+    padding-top: 80px
 }
 .place{
-    height: 1000px;
+    
+    height: 800px;
     background: url(../img/blue.jpg) no-repeat center 30px local;
 }
 .place p{
@@ -268,7 +292,7 @@ ul.numeral p{
     color: #fff;
     font-size: 15px;
     text-align: center;
-    margin: 40px 200px 0px 300px;
+    margin: 40px 240px 0px 315px;
 }
 .place li{
     float: left;
@@ -277,34 +301,62 @@ ul.numeral p{
     text-align: center;
     margin: 100px 70px 0px 200px;
 }
-.title4 h3{
+.place li img{
+    margin: 0 40% 10% 40%;
+}
+.li {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     padding: 80px 70px 0px 200px;
+    
 }
-.place input{
-    float: left;
+.title4 h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20% 30% 0% 30%;
+}
+.place2 input#names{
+    
     border: 0px solid;
     background: #eee;
      height: 40px;
-    width: 300px;
-    margin: 50px 100px 0px 200px;
+    width: 338px;
+    margin: 50px 0px 0px 350px;
 }
-.place textarea{
-    float: left;
+.place2 input#name{
+    
+    border: 0px solid;
+    background: #eee;
+    height: 40px;
+    width: 338px;
+    margin: 50px 0px 0px 20px;
+}
+.place2 textarea{
     border: 0px solid;
     background: #eee;
     height: 100px;
     width: 700px;
-    margin: 20px 100px 0px 200px;
+    margin: 20px 100px 0px 350px;
+}
+
+.put input#put{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    margin: 2% 48%;
 }
 .map{
-    
     background: url(../img/map.jpg) no-repeat 100% local;
-    height: 100%;
+    height: 356px;
 }
 footer{
     width: 100%;
