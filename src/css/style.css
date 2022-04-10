@@ -1,11 +1,25 @@
 body{
 	font-family: Arial, sans-serif;
 }
+
+.loaderArea {
+  background: linear-gradient(90deg, #F10 10%, #Fe5 90%);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
+
+
 
 .logo{
 	color: #fff;
@@ -13,7 +27,31 @@ nav{
 	line-height: 60px;
 	padding-left: 250px;
 	float: left;
+    -webkit-animation: coming 2s ease;
+    -o-animation: coming 2s ease;
+    animation: coming 2s ease;    
 }
+
+@keyframes coming{
+from(
+opacity 0;
+)
+to(
+opacity 1;
+)
+}
+
+@keyframes topshift{
+from(
+opacity 0;
+    margin: -80px;
+)
+to(
+opacity 1;
+    margin: 0px;
+)
+}
+
 .menu{
 	float: left;
 	padding-left: 150px;
@@ -25,7 +63,26 @@ nav{
 	padding-right: 20px;
 	font-size: 16px;
 	text-transform: uppercase;
+     -webkit-animation: topshift 0.4s ease;
+    -o-animation: topshift 0.4s ease;
+    animation: topshift 0.4s ease;
 }
+.menu li a{
+    color: #fff;
+    transition: all 0.2s;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:hover{
+    color: aqua;
+    
+    
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
 .main{
     width: 100%;
     height: calc(100% - 40px);
@@ -57,6 +114,8 @@ nav{
     font-size: 14px;
     padding: 0px 14px;
     margin: 30px 12px 0px 12px;
+    transition: all 0.2s;
+     transform: scale(1);
 }
 .title h2{
     color: #344051;
@@ -72,6 +131,14 @@ nav{
     padding-top: 30px;
     
     
+}
+
+.title_container input:hover{
+    background: #344051;
+    color: #fff;
+}
+.title_container input:active{
+    transform: scale(1.1)
 }
 
 .words {
@@ -116,6 +183,7 @@ nav{
 .menu2 {
     height: 500px;
     background: url(../img/fo.jpg) 100% no-repeat;
+    background-attachment: fixed;
 }
 .title2 h2{
     color: #344051;
