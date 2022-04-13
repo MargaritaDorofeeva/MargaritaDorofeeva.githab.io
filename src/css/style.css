@@ -1,8 +1,8 @@
 body{
-	font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-.loaderArea {
+/*.loaderArea {
   background: linear-gradient(90deg, #F10 10%, #Fe5 90%);
   overflow: hidden;
   position: fixed;
@@ -11,7 +11,8 @@ body{
   right:0;
   bottom:0;
   z-index: 100000;
-}
+}*/
+
 nav{
     width: 100%;
     height: 60px;
@@ -22,50 +23,51 @@ nav{
 
 
 .logo{
-	color: #fff;
-	font-size: 28px;
-	line-height: 60px;
-	padding-left: 250px;
-	float: left;
+  color: #fff;
+  font-size: 28px;
+  line-height: 60px;
+  padding-left: 250px;
+  float: left;
     -webkit-animation: coming 2s ease;
     -o-animation: coming 2s ease;
     animation: coming 2s ease;    
 }
 
 @keyframes coming{
-from(
-opacity 0;
-)
-to(
-opacity 1;
-)
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+}
 }
 
 @keyframes topshift{
-from(
-opacity 0;
+from{
+opacity: 0;
     margin: -80px;
-)
-to(
-opacity 1;
+}
+to{
+opacity: 1;
     margin: 0px;
-)
+}
 }
 
 .menu{
-	float: left;
-	padding-left: 150px;
+  float: left;
+  padding-left: 150px;
 }
 .menu li{
-	float: left;
-	line-height: 60px;
-	color: #fff;
-	padding-right: 20px;
-	font-size: 16px;
-	text-transform: uppercase;
-     -webkit-animation: topshift 0.4s ease;
-    -o-animation: topshift 0.4s ease;
-    animation: topshift 0.4s ease;
+  float: left;
+  line-height: 60px;
+  color: #fff;
+  padding-right: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+     -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 .menu li a{
     color: #fff;
@@ -75,9 +77,27 @@ opacity 1;
 }
 .menu li a:hover{
     color: aqua;
-    
-    
 }
+
+.menu li:nth-child(2){
+animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+animation-delay: 2s;
+}
+
 
 .menu li a:active{
     transform: scale(1.1);
@@ -85,15 +105,34 @@ opacity 1;
 
 .main{
     width: 100%;
-    height: calc(100% - 40px);
-    background: url(../img/me.png) no-repeat 170% 60%/auto 110% , url(../img/bg.jpg) center/cover no-repeat;
+    height: 100%;
+    background: url(../img/me.png) no-repeat 170% 10%/auto 110% , url(../img/bg.jpg) center/cover no-repeat;
 }
 .title_container{
     float: left;
     color: #344051;
     text-align: center;
     margin: 230px 0px 0px 200px;
+     -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+     -webkit-animation-delay: 2.2s;
+    -o-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+    opacity: 0;
 }
+
+@keyframes titlemove{
+from{
+opacity: 0;
+    margin: -400px;
+}
+to{
+opacity: 1;
+    margin: 200px;
+}
+}
+
 .title_container h1{
     font-size: 40px;
     font-weight: bold;
@@ -177,9 +216,19 @@ opacity 1;
     padding: 0px 14px 0px 35px;
     margin: 40px 600px 0px 600px;
     background: url(../img/z.png) 10px no-repeat local;
+    transform: scale(1);
+   transition: all 0.2s;
+}
+ 
+.words input:active{
+    transform: scale(1.1);
     
 }
-
+.words input:hover{
+    background: #eb7800;
+    color: #fff;
+    
+}
 .menu2 {
     height: 500px;
     background: url(../img/fo.jpg) 100% no-repeat;
@@ -207,12 +256,19 @@ opacity 1;
     margin: 130px 15px 0px 15px;
     background-image: url(../img/comp.png) no-repeat, url(../img/zna.png) 200px no-repeat;
     background-repeat: no-repeat;
+    
 } 
 .menu2 li img{
     margin: 0 40% 10% 40%;
-    
+    transform: rotate(0);
+    transition: all 0.5s;
     
 }
+
+.menu2 li img:hover{
+   transform: rotate(-130deg) 
+}
+
 .menu2 li p{
     text-align: center;
     font-size: 14px;
@@ -262,7 +318,17 @@ opacity 1;
     font-size: 15px;
     padding: 0px 14px 0px 14px;
     margin: 10px 0px 0px 0px;
-    
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.job input:hover{
+    background: #fff;
+    color: #63b5ae;
+}
+
+.job input:active{
+    transform: skewX(-20deg);
 }
 
 .project {
@@ -314,7 +380,15 @@ ul.numeral li{
 }
 .numeral li img{
     margin: 0 40% 10% 40%;
+    transition: all 1s;
+    
 }
+
+.numeral li img:hover{
+    transform: translate(30px,-10px);
+    
+}
+
 ul.numeral p{
      font-size: 15px;
     color: #344051; 
@@ -327,7 +401,15 @@ ul.numeral p{
     background: url(../img/man.jpg) no-repeat local;
     background-position: 50% 25%;
     padding-top: 50px;
+    transform: scale(1);
+    transition: all 0.3s;
+
 }
+
+.moretext:hover{
+    transform: scale(1.2);
+}
+
 .moretext p{
     font-size: 15px;
      margin: 200px 250px 0px 250px;
@@ -421,7 +503,18 @@ ul.numeral p{
     height: 40px;
     width: 100px;
     margin: 2% 48%;
+    transition: all 0.3s;
 }
+
+.put input#put:hover{
+    background: #fff;
+    color: #616876;
+}
+
+.put input#put:active{
+    transform: scale(1.2);
+}
+
 .map{
     background: url(../img/map.jpg) no-repeat 100% local;
     height: 356px;
